@@ -9,7 +9,7 @@ html,body{
 }
 
 /* Nav styles */
-.header,.footer{
+.header{
     background-color: #1f2937;
     color: white;
 }
@@ -29,6 +29,8 @@ html,body{
     justify-content: space-between;
 }
 
+
+
 .logo{
     font-weight: bold;
     font-variant: small-caps;
@@ -47,6 +49,8 @@ html,body{
 .nav-links a:hover{
     text-decoration: underline;
 }
+
+
 
 .nav-info{
     display: flex;
@@ -89,6 +93,8 @@ button{
     height: 100%;
 }
 
+
+
 /* End of Nav styles */
 
 /* Services styles */
@@ -127,6 +133,7 @@ button{
     color: #1f2937;
 }
 
+
 /* End of services styles */
 
 /* Testimonials styles */
@@ -164,3 +171,121 @@ button{
     text-align: right;
     padding-right: 20px;
 }
+
+
+
+/* End of testimonials */
+
+/* Call to action styles */
+    .call-to-action-cont{
+        padding: 50px;
+    }
+    
+    .call-to-action{
+        background-color: #3382F6;
+        width: 100%;
+        max-width: 800px;
+        border-radius: 10px;
+        color: white;
+        padding: 20px 40px;
+        margin: auto;
+    }
+
+    .call-to-action-header{
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .email-cont{
+        background-color: white;
+        padding: 5px;
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 20px;
+    }
+
+    .call-to-action-btn{
+        border-radius: 20px;
+        padding:10px 25px;
+    }
+
+    .email{
+        width: 250px;
+        padding-left: 15px;
+        border-radius: 15px;
+        border:none ;
+    }
+
+    .email:focus{
+        outline:none;
+    }
+
+    /* footer */
+    .footer{
+        background-color: #1f2937;
+        padding: 15px;
+        text-align: center;
+        color: white;
+    }   
+        @media screen and (max-width:400px) {
+            .navbar{
+                font-size: 13px;
+            }
+        
+            .nav-info{
+                flex-direction: column-reverse;
+            }
+        
+            .nav-info{
+                margin:20px 0px;
+            }
+        
+            .nav-info div{
+                flex:1;
+            }
+        
+            .nav-info div h1{
+                font-size: 25px;
+            }
+        
+            .services-cont{
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .testimonials-cont{
+                flex-direction: column;
+                margin-bottom: 0px;
+                gap: 10px;
+            }
+            
+            .call-to-action-cont{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 30px 10px;
+            }
+
+            .call-to-action{
+                width:100%;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            .call-to-action-text{
+                font-size: 14px;
+            }
+
+
+            .email-cont{
+                width: 95%;
+                margin: auto;
+                /* border: 1px solid black; */
+            }
+
+            .email{
+                width: 100%;
+            }
+        }
